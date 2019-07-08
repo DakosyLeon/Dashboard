@@ -1,18 +1,18 @@
 import React from 'react';
 import './App.css';
-import Login from "./Login";
+import DashboardMaster from "./DashboardMaster";
+import Login from './Login';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h2 className="App-titel">Dashboard Login</h2>
-        
+      <header className="App-header">       
       </header>
       <body>
-      <Login></Login>
+        <Login></Login>
+        <DashboardMaster></DashboardMaster>
       </body>
-      </div>
+    </div>
   );
 }
 
@@ -23,7 +23,7 @@ export default App;
 1. Login Komponente
   Zwei Text Input Felder
   Ein Button
-2. Dashboard
+2. DashboardController
   D-Master mit einer Liste aller Einträge
   D-Row als eigene Komponente
 3. Props korrekt übergeben, dynmaische Anpassung
@@ -31,6 +31,8 @@ export default App;
 5. Typescript Konvertierung
 6. Redux Implementation
 7. Router Unterseiten ansteuern
+
+8. Row als Komponente
 
 
 */
