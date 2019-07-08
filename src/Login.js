@@ -1,9 +1,19 @@
-import React, { Component } from 'react';
-import "./Login.css";
+import React from 'react';
+import "./Dashboard.css";
+import DashboardMaster from "./DashboardMaster";
 
-class Login extends Component {
-  
-    render() {
+const MODE_LOGIN = "MODE_LOGIN";
+const MODE_DASHBOARD = "MODE_DASHBOARD";
+
+export default function Login() {
+    const [mode, setMode] = React.useState(MODE_LOGIN); 
+
+    if (mode === MODE_DASHBOARD)
+      return (
+        <DashboardMaster      
+        />
+      );
+
         return(
             <div className="Login">
                 <header>
@@ -12,11 +22,15 @@ class Login extends Component {
             <div className="Login-textfields">
                 <input size="25" placeholder="Emailadresse"></input><br />
                 <input size="25" placeholder="Passwort" type="password"></input>
-                <tbody></tbody>
             </div>
-                <button className="Login-button">Log In</button>
+                <button onClick={() => setMode(MODE_DASHBOARD)}>Log In</button>
         </div>
-        );     
-    }
+        );        
+
+
+
+
+
 }
-export default Login;
+
+    
