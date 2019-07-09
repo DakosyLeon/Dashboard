@@ -26,6 +26,4 @@ export default App;
 6. Redux Implementation
 7. Router Unterseiten ansteuern
 8. Row als Komponente
-
-
 */
