@@ -14,11 +14,11 @@ export default function Login() {
         />
       );
         return(
-            <div className="Login">
+            <div>
                 <header>
                 <h2>Dashboard Login</h2>
                 </header>
-                <div className="Login-textfields">
+                <div>
                     <input size="25" placeholder="Emailadresse"></input><br />
                     <input size="25" placeholder="Passwort" type="password"></input>
                 </div>

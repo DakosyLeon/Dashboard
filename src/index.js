@@ -11,7 +11,7 @@ ReactDOM.render(
     <HashRouter>
         <div>
             <Navigation></Navigation>
-            <Route exact={true} path="/" component={App} />
+            <Route exact={true} path="/login" component={App} />
             <Route exact={true} path="/dashboard" component={DashboardMaster} />
         </div>
     </HashRouter>, 

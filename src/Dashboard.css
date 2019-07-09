@@ -1,13 +1,41 @@
+li {
+  height: 100%;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+}
+
+li:hover {
+  background: #848484;
+  color: #212121;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  
+}
+
+.nav {
+    width: 100%;
+    margin: 0;
+    top: 0;
+    background: rgb(187, 187, 187);
+    color: #ccc;
+}
+
 
   .Ship-Info-Tabelle {
     margin: 50px;
   }
 
-
-  * {
-    box-sizing: border-box;
-  }
-  
   html {
     margin-top: 2rem;
     width: 100%;
@@ -67,19 +95,21 @@
     color: #fefff2;
   }
   
-  th,td {
+ td {
     text-align: left;
     font-weight: normal;
     margin: 0;
-    padding: 0.5rem;
+    padding-left: 0.5rem;
     border: 0;
   }
   
   th {
     font-weight: 700;
+    text-align: left;
     background-color: rgba(255, 0, 0, 0.644);
-    padding-top: 0.7rem;
-    padding-bottom: 0.7rem;
+    margin: 0;
+    padding: 0.5rem;
+    border: 0;
   }
   
   tr:nth-child(odd) {
