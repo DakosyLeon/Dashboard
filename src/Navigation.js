@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import { Link} from "react-router-dom";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 
 function Navigation() {
@@ -7,11 +7,12 @@ function Navigation() {
     return (
         <div className="nav">
              <ul>
-                <li><Link to="/login">Login</Link> </li>          
-                <li><Link to="/dashboard">Dashboard</Link></li>    
-  
+                <li><NavLink to="/login">Login</NavLink> </li>       
+                <li><NavLink to="/dashboard">Dashboard</NavLink></li>    
             </ul>
         </div>
     )
 }
 export default Navigation;
+
+

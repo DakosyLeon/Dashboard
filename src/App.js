@@ -1,5 +1,5 @@
-import React from 'react';
 import './App.css';
+import React from 'react';
 import Login from './Login';
 
 function App() {
@@ -21,7 +21,7 @@ export default App;
    X D-Master mit einer Liste aller Einträge
 4. X Komponenten Wechsel onClick
 5. Typescript Konvertierung
-6. Redux Implementation
-7. Router Unterseiten ansteuern
-8. Row als Komponente
+6. X Redux Implementation -> Context+Hooks
+7. X Router Unterseiten ansteuern
+8. X Row als Komponente
 */

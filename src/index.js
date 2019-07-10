@@ -5,13 +5,13 @@ import App from './App';
 import { HashRouter, Route} from "react-router-dom";
 import DashboardMaster from './DashboardMaster';
 import Navigation from "./Navigation"
-
+import Login from './Login';
 
 ReactDOM.render(
     <HashRouter>
         <div>
-            <Navigation></Navigation>
-            <Route exact={true} path="/login" component={App} />
+            <Navigation />
+            <Route exact={true} path="/login" component={Login} />
             <Route exact={true} path="/dashboard" component={DashboardMaster} />
         </div>
     </HashRouter>, 
