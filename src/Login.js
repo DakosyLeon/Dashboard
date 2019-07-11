@@ -1,6 +1,6 @@
 import React from "react";
-import {  withRouter } from "react-router-dom";
-import "./Dashboard.css";
+import { withRouter } from "react-router-dom";
+import "./CSS/Dashboard.css";
 
 class LoginComponent extends React.Component {
   render() {
@@ -21,9 +21,7 @@ class LoginComponent extends React.Component {
     );
   }
 }
-
 const Login = withRouter(LoginComponent);
 export default Login;
-
 
 //history.push

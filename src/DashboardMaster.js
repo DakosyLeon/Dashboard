@@ -1,6 +1,6 @@
 import React from "react";
-import "./Dashboard.css";
-import DashboardRow, { DashboardRow2 } from "./DashboardRow";
+import "./CSS/Dashboard.css";
+import { DashboardRow2 } from "./DashboardRow";
 
 const shipInfosFix = [
   { id: 11232, name: "Adrian Maersk", land: "Deutschland", size: 324 },
@@ -29,8 +29,6 @@ function DashboardMaster() {
           {shipInfosFix.map(i => (
             <DashboardRow2 key={i.id} shipInfo={i} />
           ))}
-
-          <DashboardRow />
         </tbody>
       </table>
     </div>
