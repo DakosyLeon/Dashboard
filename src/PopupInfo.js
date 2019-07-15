@@ -6,11 +6,14 @@ class PopupInfo extends React.Component {
     return (
       <div className="popup">
         <div className="popup-inner">
-          <h1>Additional information for detailed support</h1>
           <div className="popup-content">
-            <p>Information about selected ship</p>
+            <h1>{this.props.headline}</h1>
+            <p>{this.props.text}</p>
           </div>
-          <button onClick={this.props.closePopup}>Close</button>
+          <button onClick={this.props.onClose}>Close</button>
+          {this.props.onDelete && (
+            <button onClick={this.props.onDelete}>Delete</button>
+          )}
         </div>
       </div>
     );

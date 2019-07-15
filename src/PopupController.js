@@ -17,7 +17,6 @@ class PopupController extends Component {
     return (
       <div>
         <button onClick={this.togglePopup.bind(this)}> Info</button>
-
         {this.state.showPopup ? (
           <PopupInfo closePopup={this.togglePopup.bind(this)} />
         ) : null}

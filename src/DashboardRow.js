@@ -1,6 +1,4 @@
 import React from "react";
-import PopupController from "./PopupController";
-import DeletePopupController from "./DeletePopupController";
 
 export default function DashboardRow() {
   /* Hier sollen später die Daten für den Inhalt der Tabelle geladen werden
@@ -27,15 +25,12 @@ export default function DashboardRow() {
      }
      */
 
-  // zum init laden
   const shipInfosFix = [
     { id: 11232, name: "Adrian Maersk", land: "Deutschland", size: 324 },
     { id: 21424, name: "Aeneas", land: "Saudi Arabien", size: 405 },
     { id: 36343, name: "A.P. Moeller", land: "Deutschland", size: 485 },
     { id: 28766, name: "Admiral Santosh", land: "England", size: 210 }
   ];
-
-  //neue dynamische liste
 
   const shipInfo = shipInfosFix.map(data => (
     <tr key={data.id}>
@@ -50,7 +45,6 @@ export default function DashboardRow() {
       </td>
     </tr>
   ));
-
   return shipInfo;
 }
 
@@ -63,8 +57,8 @@ export function DashboardRow2(props) {
       <td>{data.land}</td>
       <td>{data.size}</td>
       <td>
-        <PopupController />
-        <DeletePopupController />
+        <button onClick={() => props.onOpenInfoPopup(data.id)}>Info</button>
+        <button onClick={() => props.onOpenDeletePopup(data.id)}>Delete</button>
         <button>EDIT</button>
       </td>
     </tr>
